@@ -11,7 +11,7 @@ grails.project.source.level = 1.6
 //   run: [maxMemory:1024, minMemory:64, debug:false, maxPerm:256]
 //]
 
-grails.plugin.location.aws = "../grails-aws"
+//grails.plugin.location.aws = "../grails-aws"
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -46,7 +46,7 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.8.3"
         runtime ":resources:1.2"
 
-        compile ':aws:1.2.12.3'
+        compile ':aws:1.2.12.4'
 
         build ":tomcat:$grailsVersion"
 
