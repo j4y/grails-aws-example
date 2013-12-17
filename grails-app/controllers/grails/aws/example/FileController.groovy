@@ -21,6 +21,13 @@ class FileController {
 
     def save() {
         def fileInstance = new File(params)
+
+        def file = request.getFile('file')
+        def uploadedFile = file.inputStream.s3upload(file.originalFilename) {
+        }
+        fileInstance.fileName = file.getOriginalFilename()
+        fileInstance.objectKey = fileInstance.fileName
+
         if (!fileInstance.save(flush: true)) {
             render(view: "create", model: [fileInstance: fileInstance])
             return
