@@ -69,6 +69,21 @@ environments {
     }
 }
 
+// aws plugin config
+grails {
+    plugin {
+        aws {
+            credentials {
+                accessKey = "your-access-key-here"
+                secretKey = "your-secret-key-here"
+            }
+        s3 {
+            bucket = "default-bucket-name-here"
+        }
+    }
+}
+
+
 // log4j configuration
 log4j = {
     // Example of changing the log pattern for the default console appender:
