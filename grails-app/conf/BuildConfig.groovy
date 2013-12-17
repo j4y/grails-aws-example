@@ -46,7 +46,7 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.8.3"
         runtime ":resources:1.2"
 
-        compile ":aws:1.2.12.2"
+        compile ':aws:1.6.7.1'
 
         build ":tomcat:$grailsVersion"
 
