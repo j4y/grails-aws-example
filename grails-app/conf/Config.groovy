@@ -77,9 +77,10 @@ grails {
                 accessKey = "your-access-key-here"
                 secretKey = "your-secret-key-here"
             }
-        s3 {
-            bucket = "default-bucket-name-here"
-        }
+			s3 {
+				bucket = "default-bucket-name-here"
+			}
+		}
     }
 }
 
